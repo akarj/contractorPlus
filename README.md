@@ -1,37 +1,37 @@
-# Nested Form Example via React Form hook
+# Nested Form Example using React Hook Form
 
-The project is demo of the handling of the nested level of form using [React-form-hook](https://www.react-hook-form.com/). The validation of fields within the form were handled by [Zod](https://zod.dev/).
+This project demonstrates how to handle nested forms using [React Hook Form](https://www.react-hook-form.com/). Field validations within the form are managed by [Zod](https://zod.dev/). You can view the [Live Demo here](https://invoiceformformhook.netlify.app/).
 
-## Form structure
+## Form Structure
 
-The form contains two parts,
+The form consists of two main parts:
 
-- Header
-- body
+- **Header**
+- **Body**
 
 ### Header
 
-Header contains the basic details about the title and date published.
+The Header section includes basic details such as the title and publication date.
 
 ### Body
 
-Body contains actionable form. It has 3 levels. These are following,
+The Body contains the actionable part of the form, which has three nested levels:
 
-- Group
-  - Task
-    - Material
+- **Group**
+  - **Task**
+    - **Material**
 
-## Form Submit
+## Form Submission
 
-The form upon submit shows the formdata in console log.
+Upon submission, the form data is logged to the console.
 
-## Form Inline Behaviour
+## Inline Form Behavior
 
-Within the form, React-form-hook's FormProvider, useForm for handling the internal state management via underlining React's Context API and controlling the form.
+Within the form, `FormProvider` and `useForm` from React Hook Form are used to manage the internal state through React's Context API, ensuring seamless control of the form.
 
 ## Acknowledgements
 
-- [React Form Hook Advance doc](https://www.react-hook-form.com/advanced-usage/#ConnectForm)
-- [React Form Hook Tutorial Video by Code Genix](https://youtu.be/7anLE_RoDwU?si=V3JPxh_yBnLqSft9)
-- [Zod](https://github.com/react-hook-form/resolvers#zod)
-- [Chat GPT](https://chatgpt.com/)
+- [React Hook Form Advanced Usage](https://www.react-hook-form.com/advanced-usage/#ConnectForm)
+- [React Hook Form Tutorial by Code Genix](https://youtu.be/7anLE_RoDwU?si=V3JPxh_yBnLqSft9)
+- [Zod Integration with React Hook Form](https://github.com/react-hook-form/resolvers#zod)
+- [ChatGPT](https://chatgpt.com/)
