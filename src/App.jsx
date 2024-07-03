@@ -3,16 +3,18 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { estimateSchema } from './validationSchema';
 import EstimateForm from './EstimateForm';
 
+const defaultValues = {
+  Estimate: {
+    Title: '',
+    ExpiryDate: '',
+    Group: [],
+  },
+}
+
 function App() {
   const methods = useForm({
     resolver: zodResolver(estimateSchema),
-    defaultValues: {
-      Estimate: {
-        Title: '',
-        ExpiryDate: '',
-        Group: [],
-      },
-    },
+    defaultValues: defaultValues,
   });
 
   const onSubmit = (data) => {
